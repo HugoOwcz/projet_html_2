@@ -1,0 +1,173 @@
+
+header {
+    position: fixed;
+    top: 0%;
+    height: 51px;
+    width: 400px;
+    background-color: lightblue;
+}
+
+nav {
+    text-align: left ;
+}
+
+#logo {
+    width: 40px;
+}
+
+.nav {
+    border: 2px solid black;
+    background-color: #545454;
+    padding: 5px;
+    margin-left: 3px;
+    color: white;
+    position: relative;
+    bottom: 10px;
+    border-radius: 8px;
+}
+
+.nav:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+body {
+    background-color:  #BADA55;
+}
+
+#nom-site {
+    margin-top: 4%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+}
+
+#actualite {
+    border: black dotted 5px;
+    border-radius: 15px;
+    background-color: aqua;
+    width: 100%;
+    top: 50px;
+}
+
+#titre-actualite {
+    text-align: center;
+    top: 6%;
+    font-size: 300%;
+}
+
+.actu {
+    text-align: center;
+    font-size: 200%;
+}
+
+#a-la-une {
+    width: 100%;
+}
+
+#titre-a-la-une {
+    position: absolute;
+    left: 43%;
+    color: white;
+    font-size: 500%;
+}
+
+#img-a-la-une {
+    max-height: 700px;
+    width:100%;
+}
+
+.img-carousel {
+    width: 20%;
+}
+
+@keyframes display {
+    0% {
+    transform: translateX(200px);
+    opacity: 0;
+    }
+    4% {
+    transform: translateX(0);
+    opacity: 1;
+    }
+    24% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    29% {
+    transform: translateX(-200px);
+    opacity: 0;
+    }
+    100% {
+    transform: translateX(-200px);
+    opacity: 0;
+    }
+}
+
+.carousel > .img-carousel {
+    position: absolute;
+    top: 65%;
+    left: calc(46% - 100px);
+    opacity: 0;
+    animation: display 40s infinite;
+}
+
+.img-carousel:nth-child(2) {
+    animation-delay: 10s;
+}
+.img-carousel:nth-child(3) {
+    animation-delay: 20s;
+}
+.img-carousel:nth-child(4) {
+    animation-delay: 30s;
+}
+
+#categorie {
+    left: 50%;
+}
+
+#titre-categorie {
+    font-size: 400%;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+    list-style: none;
+    margin-bottom: 2%;
+}
+
+.lien-categorie {
+    font-size: 200%;
+    text-decoration: none;
+    color: black;
+}
+
+.image-categorie{
+    width: 15%;
+}
+
+footer {
+    background-color: lightblue;
+    width: 100%;
+    height: 40px;
+}
+
+.nav-footer {
+    border: 2px solid black;
+    background-color: #545454;
+    padding: 0.3%;
+    margin-left: 1%;
+    color: white;
+    position: relative;
+    top: 11px;
+    border-radius: 8px;
+    
+}
+
+.nav-footer:hover {
+    background-color: lightgray;
+    color: black;
+}

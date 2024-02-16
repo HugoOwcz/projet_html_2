@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Le Four Tout Contact </title>
+        <link rel="icon" href="../images/Vista Logos/logo-png.png">
+        <link rel="stylesheet" href="css/contact.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img id="logo" src="../images/Vista Logos/logo-png.png" alt="logo du site Le Four Tout">
+                <a href="../accueil.html" class="nav"> Accueil </a>
+            </nav>
+        </header>
+        <main>
+            <h1> Contact </h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c6dc99b1-6d04-474f-996c-273a8ea54cb8">
+                <fieldset>
+                    <legend> Information personnelle</legend>
+                    <label for="prenom"> Prenom : </label>
+                    <input type="text" id="prenom" name="prenom" required>
+                    <br>
+                    <label for="nom"> Nom : </label>
+                    <input type="text" id="nom" name="nom" required>
+                    <br>
+                    <label for="email"> Email : </label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="tel"> Téléphone : </label>
+                    <input type="tel" id="tel" name="tel" required>
+                </fieldset>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10"> Quel est votre problème ? </textarea>
+                <br>
+                <input type="reset" value="effacer" class="bouton">
+                <br>
+                <input type="submit" value="envoyer" class="bouton">
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>

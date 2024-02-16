@@ -1,0 +1,142 @@
+
+header {
+    position: fixed;
+    top: 0%;
+    height: 51px;
+    width: 210px;
+    background-color: lightblue;
+}
+
+nav {
+    text-align: left ;
+}
+
+#logo {
+    width: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav {
+    border: 2px solid black;
+    background-color: #545454;
+    padding: 5px;
+    margin-left: 3px;
+    color: white;
+    position: relative;
+    bottom: 10px;
+    border-radius: 8px;
+}
+
+.nav:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+body {
+    background-color: #BADA55;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin-top: 4%;
+    margin-left: 3%;
+}
+
+#produit {
+    position: relative;
+    left: 35%;
+    padding: 2%;
+    width: 20%;
+    border: black solid 2px;
+}
+
+#image {
+    width: 12%;
+}
+
+.petite-img {
+    width: 1.75%;
+    min-width: 35px;
+}
+
+.img-carousel {
+    width: 50%;
+}
+
+@keyframes display {
+    0% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+    4% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    24% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    35% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0px);
+      opacity: 0;
+    }
+  }
+
+.carousel > .img-carousel {
+    position: absolute;
+    top: 3%;
+    left: 30%;
+    opacity: 0;
+    animation: display 30s infinite;
+}
+
+.img-carousel:nth-child(2) {
+    animation-delay: 10s;
+}
+.img-carousel:nth-child(3) {
+    animation-delay: 20s;
+}
+
+#recommandation {
+    position: relative;
+    left: 40%;
+}
+
+#img-recommander {
+    width: 10%;
+}
+
+footer {
+    margin-top: 3%;
+    background-color: lightblue;
+    width: 100%;
+    height: 40px;
+}
+
+.nav-footer {
+    border: 2px solid black;
+    background-color: #545454;
+    padding: 0.3%;
+    margin-left: 1%;
+    color: white;
+    position: relative;
+    top: 11px;
+    border-radius: 8px;
+    
+}
+
+.nav-footer:hover {
+    background-color: lightgray;
+    color: black;
+}

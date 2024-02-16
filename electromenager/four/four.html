@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Le Four Tout Four</title>
+        <link rel="icon" href="../../images/Vista Logos/logo-png.png">
+        <link rel="stylesheet" href="css/four.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img id="logo" src="../../images/Vista Logos/logo-png.png" alt="logo du site Le Four Tout">
+                <a href="../../accueil.html" class="nav"> Accueil </a>
+                <a href="../electromenager.html" class="nav"> Categorie </a>
+            </nav>
+        </header>
+        <main>
+            <h1> Four </h1>
+            <section id="produit">
+                <section id="image">
+                    <img src="images/four-face.png" alt="vue de face du four" class="petite-img">
+                    <br>
+                    <img src="images/four-ouvert.png" alt="vue de coté du four" class="petite-img">
+                    <br>
+                    <img src="images/bouton-four.png" alt="vue zoomer des boutons du four" class="petite-img">
+                    <section class="carousel">
+                        <img src="images/four-face.png" alt="vue de face du four" class="img-carousel">
+                        <img src="images/four-ouvert.png" alt="vue de coté du four" class="img-carousel">
+                        <img src="images/bouton-four.png" alt="vue zoomer des boutons du four" class="img-carousel">
+                    </section>
+                </section>
+                <section id="description">
+                    <h2> 499.99 € </h2 class="prix">
+                    <p class="description">
+                        Four Beko en inox de dimension : 55,8cm * 57,2cm / 54,7cm. Il dispose aussi d'une fonction grill. Le four est vendu avec 1 grille. Il se nettoye très facilement. Il a une consommation de 0.50kWh.
+                    </p class="description">
+                </section>
+                <section>
+                    <p> Produit en stock.</p>
+                    <form method="post">
+                        <label for="quantite"> Combien en voulez-vous : </label>
+                        <select name="quantite" id="quantite">
+                            <option value="un"> 1 </option>
+                            <option value="deux"> 2 </option>
+                            <option value="trois"> 3 </option>
+                            <option value="quatre"> 4 </option>
+                            <option value="cinq"> 5 </option>
+                        </select>
+                        <button type="submit"> Ajouter au panier. </button>
+                    </form>
+                </section>
+            </section>
+            <section id="recommandation">
+                <h2> Produit recommander</h2>
+                <section>
+                    <a href="../machine-cafe/machine-cafe.html">
+                        <img src="images/machine.png" alt="machine à café encastrable kitchenaid" id="img-recommander">
+                        <h3> Machine à café </h3>
+                        <h4> 1999.99 € </h4>
+                    </a>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <a href="../../contact/contact.html" class="nav-footer"> Me contacter </a>
+        </footer>
+    </body>
+</html>
